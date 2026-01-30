@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data files (large)
+data/
+*.csv
+*.json
+*.jsonl
+
+# ML / PyTorch
+*.pt
+*.pth
+
+# Editor / OS
+.vscode/
+.DS_Store
