@@ -7,15 +7,35 @@ __pycache__/
 venv/
 env/
 
-# Data files (large)
-data/
+# Data files
 *.csv
 *.json
 *.jsonl
+*.parquet
+*.npy
+
+# Keep the data directory, but leave out large/raw/generated datasets
+!data/
+!data/**/
+data/tweets.jsonl
+data/dados_gerais_bronze1.csv
+data/tweets_brutos_bronze2.csv
+data/*.parquet
+data/embeddings_bertweetbr/
 
 # ML / PyTorch
 *.pt
 *.pth
+*.pkl
+
+# Project documents / temp files
+*.docx
+*.pdf
+*.txt
+!requirements.txt
+*.tmp
+~$*
+~WRL*.tmp
 
 # Editor / OS
 .vscode/
