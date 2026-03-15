@@ -1,5 +1,6 @@
 Introducao
-	Falar sobre pesquisas o debate nas redes sociais, como a economia se encaixa no debate social das eleicoes. (1pg 2pg)
+	Falar sobre pesquisas do debate nas redes sociais, como a economia se encaixa no debate social das eleicoes. (1pg 2pg)
+	Uma contribuição importante desta pesquisa para este projeto CNPq será analisar a associação entre o sentimento econômico e as opiniões políticas dos usuários.
 
 Material e Metodos
 	Descrever fundamentalmente os dados que estou utilizando no twitter, como eles foram coletados
