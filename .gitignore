@@ -8,7 +8,7 @@ venv/
 env/
 
 # Data files
-*.csv
+!.csv
 *.json
 *.jsonl
 *.parquet
