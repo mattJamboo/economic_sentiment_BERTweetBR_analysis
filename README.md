@@ -16,12 +16,7 @@ The datasets are not included in this public repository. To reproduce the notebo
 The notebooks use relative paths through:
 
 ```python
-from pathlib import Path
-
-PROJECT_ROOT = Path.cwd()
-while PROJECT_ROOT.name != "ic" and PROJECT_ROOT.parent != PROJECT_ROOT:
-    PROJECT_ROOT = PROJECT_ROOT.parent
-DATA_DIR = PROJECT_ROOT / "data"
+from src.imports import DATA_DIR
 ```
 
 This avoids machine-specific paths and allows the project to run from different local environments.

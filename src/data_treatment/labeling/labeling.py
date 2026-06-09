@@ -1,10 +1,7 @@
 import pandas as pd
 import os 
-from pathlib import Path
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-DATA_DIR = PROJECT_ROOT / "data"
+from src.imports import DATA_DIR
 
 def manual_labeling(df, tweet_col='tweet', label_col='sentiment_label',
                      save_path="tweets_rotulados.parquet", save_every=50, ov=False):
