@@ -22,6 +22,7 @@ data/dados_gerais_bronze1.csv
 data/tweets_brutos_bronze2.csv
 data/*.parquet
 data/embeddings_bertweetbr/
+Resultados_Modelos/
 
 # ML / PyTorch
 *.pt
@@ -36,6 +37,7 @@ data/embeddings_bertweetbr/
 *.tmp
 ~$*
 ~WRL*.tmp
+*.png
 
 # Editor / OS
 .vscode/
