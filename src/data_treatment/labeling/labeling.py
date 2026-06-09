@@ -1,5 +1,10 @@
 import pandas as pd
 import os 
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DATA_DIR = PROJECT_ROOT / "data"
 
 def manual_labeling(df, tweet_col='tweet', label_col='sentiment_label',
                      save_path="tweets_rotulados.parquet", save_every=50, ov=False):
@@ -76,15 +81,15 @@ def manual_labeling(df, tweet_col='tweet', label_col='sentiment_label',
     return df
 
 
-df = pd.read_parquet(r"C:\\Users\\Mateus Monteleone\\Projects\\ic\\data\\df_rotulação_manual.parquet")
+df = pd.read_parquet(DATA_DIR / "df_rotulação_manual.parquet")
 
-save_path = r"C:\\Users\\Mateus Monteleone\\Projects\\ic\\data\\tweets_rotulados.parquet"
+save_path = DATA_DIR / "tweets_rotulados.parquet"
 
-# da = pd.read_parquet(r"C:\\Users\\Mateus Monteleone\\Projects\\ic\\data\\tweets_rotulados.parquet")
+# da = pd.read_parquet(DATA_DIR / "tweets_rotulados.parquet")
 
 # da.at[276, 'sentiment_manual'] = -1
 
-# da.to_parquet(r"C:\\Users\\Mateus Monteleone\\Projects\\ic\\data\\tweets_rotulados.parquet")
+# da.to_parquet(DATA_DIR / "tweets_rotulados.parquet")
 
 # print(da.at[276, 'clean_text'])
 

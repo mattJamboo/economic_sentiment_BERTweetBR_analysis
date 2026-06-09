@@ -8,23 +8,15 @@ venv/
 env/
 
 # Data files
-!.csv
-*.json
-*.jsonl
-*.parquet
-*.npy
+data/*
+!data/.gitkeep
 
-# Keep the data directory, but leave out large/raw/generated datasets
-!data/
-!data/**/
-data/tweets.jsonl
-data/dados_gerais_bronze1.csv
-data/tweets_brutos_bronze2.csv
-data/*.parquet
-data/embeddings_bertweetbr/
+# Generated model outputs and figures
 Resultados_Modelos/
+Resultados Modelos/
+*.[Pp][Nn][Gg]
 
-# ML / PyTorch
+# ML artifacts
 *.pt
 *.pth
 *.pkl
@@ -37,7 +29,6 @@ Resultados_Modelos/
 *.tmp
 ~$*
 ~WRL*.tmp
-*.png
 
 # Editor / OS
 .vscode/
