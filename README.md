@@ -1,4 +1,4 @@
-# Economic Sentiment Machine Learning Analysis
+# Economic Sentiment BERTweetBR Analysis
 
 This repository contains notebooks and source code for an undergraduate research project on economic sentiment in Brazilian political tweets related to the 2022 presidential election.
 We would like to thank Fernando Carneiro, Daniela Vianna, Jonnathan Carvalho, Alexandre Plastino & Aline Paes for training BERTweetBR and making it publicly available.
